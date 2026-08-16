@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Er-Mayank-Aggarwal.github.io/sitemap.xml
