@@ -287,8 +287,20 @@ a:hover {
 /* ---------- Interest cards ---------- */
 .interest-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .interest-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .interest-card {
@@ -296,6 +308,12 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.interest-card p {
+  flex: 1;
 }
 
 .interest-card h3 {
